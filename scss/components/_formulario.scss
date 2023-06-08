@@ -1,0 +1,25 @@
+/*::::::::::::::formulario::::::::::::::::*/
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 100px;
+  margin-right: 400px;
+  margin-left: 400px;
+  background-color: map-get($colores, card);
+  border-radius: 10px;
+}
+
+/*::::::::::FORMULARIO::::::::::::*/
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: map-get($colores, blanco);
+}
+
+
+
+/*::::::::::::::::::::::::*/

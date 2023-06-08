@@ -1,26 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;   /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+  box-sizing: content-box; /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 }
 
-body{
+body {
   font-family: sans-serif;
   margin: 0;
 }
 
-a{
-  text-decoration: none;
-  color: #ffffffab;
-  transition: 0.4s;
-  
-}
-
-h1{
-  color: #ffffffab
-}
-
-header{
+header {
   display: flex;
   min-height: 40px;
   justify-content: space-between;
@@ -29,160 +18,50 @@ header{
   padding: 10px;
 }
 
-@media screen and (max-width:800px) {
-  header{
-    flex-direction:column;
-  }
-  a{
-    text-decoration: none;
-    color: #ffffffab;
-    margin-top:5%;
-    transition: 0.4s;
-  }
-}
-
-
-.underline{
-  display: inline-block;
-  position: relative;
-}
-
-/*:::::::::efecto subrayado:::::::::::*/
-.underline:after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #851d1d;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.6s ease-out;
-}
-
-.underline:hover:after{
- transform: scaleX(1);
- transform-origin:bottom left ;
-}
-/*:::::::::::::::::::::::::::::::::*/
-
-.logo{
-  display: flex;
-  align-items: center;
-}
-
-.logo img{
-  height: 30px;                                              /*30px*/
-  margin-right: 10px;
-}
-
-.img_titulo{
-  margin-top: 5rem;
-  width: 60% ;                               /*700px*/
-  height: 10% ;                              /*150px*/
-  padding-left: 10% ;                       /*200px*/
-}
-
-.intro{
-  width: 65%;                             /*500px*/
-  font-family: 'Pathway Gothic One', sans-serif;
-  padding-left: 10%;                    /*200px*/
- 
-}
-
-
-.titu_gale{
-  margin-left: 10%;
-  width: 35%;
-}
-
-@media screen and (max-width:800px){
-  .titu_gale{
-    margin-left: 10%;
-    margin-top: 5%;
-    width: 60%;
-  };
-  }
-
-ul{
-  margin-bottom: 0%; /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-}
-
-nav a{
-  font-weight: 600;
-  margin-right: 30px;
-}
-
-@media screen and (max-width:560px){
-  nav a{
-    font-weight: 400;
-    margin-right: 10px;
-  }
-  }
-
-nav a:hover{
-  color:#b60b17;
-  transition: all 300ms ease;
-  
-}
-
-main{
-  background-color: rgb(0, 0, 0);
-}
-
-h2{
-  color: #ffffffab;
-  font-family: 'Pathway Gothic One', sans-serif;
-}
-
-p{
-  color: #ffffffab;
-  font-family: 'Pathway Gothic One', sans-serif;
-  font-weight: 800;
-}
-
-
-/*:::::::::::::Pie de pagina::::::::::*/
-
-.pie_pagina{
+.pie_pagina {
   width: 100%;
   background-color: rgb(22, 21, 21);
 }
-.pie_pagina .grupo_1{
+
+.pie_pagina .grupo_1 {
   width: 100%;
   max-width: 1200px;
-  margin: auto;                                                             
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);                                      /*:::::::::::::::::::::::::::USANDO GRID:::::::::::::::::::::::*/
-  grid-gap:50px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*:::::::::::::::::::::::::::USANDO GRID:::::::::::::::::::::::*/
+  grid-gap: 50px;
   padding: 30px 0px;
 }
 
-.img_footer{
+.img_footer {
   width: 10%;
   height: 5%;
 }
-.pie_pagina .grupo_1 .box figure{
+
+.pie_pagina .grupo_1 .box figure {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.pie_pagina .grupo_1 .box figure img{
+
+.pie_pagina .grupo_1 .box figure img {
   width: 250px;
 }
-.pie-pagina .grupo_1 .box h2{
+
+.pie-pagina .grupo_1 .box h2 {
   color: #fff;
   margin-bottom: 25px;
   font-size: 20px;
 }
-.pie_pagina .grupo_1 .box p{
+
+.pie_pagina .grupo_1 .box p {
   color: #efefef;
   margin-bottom: 10px;
 }
-.pie_pagina .grupo_1 .red_social a{
+
+.pie_pagina .grupo_1 .red_social a {
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -194,20 +73,23 @@ p{
   text-align: center;
   transition: all 300ms ease;
 }
-.pie_pagina .grupo_1 .red_social a:hover{
+
+.pie_pagina .grupo_1 .red_social a:hover {
   color: rgb(158, 84, 84);
 }
-.pie_pagina .grupo_2{
+
+.pie_pagina .grupo_2 {
   background-color: rgb(19, 0, 0);
   padding: 15px 10px;
   text-align: center;
   color: #fff;
 }
-.pie_pagina .grupo_2 small{
+
+.pie_pagina .grupo_2 small {
   font-size: 15px;
 }
 
-.historia_titulo{
+.historia_titulo {
   color: #fff;
   margin-left: 23%;
   margin-bottom: 10%;
@@ -215,263 +97,32 @@ p{
   font-size: 3vw;
 }
 
-
-.img_ig{
+.img_ig {
   width: 15%;
   height: 15%;
   transition: 0.4s;
 }
 
-.img_lin{
+.img_lin {
   width: 7%;
   height: 7%;
   transition: 0.4s;
 }
 
-.img_ig:hover{
+.img_ig:hover {
   width: 17%;
   height: 17%;
   transition: 0.4s;
 }
 
-.img_lin:hover{
+.img_lin:hover {
   width: 9%;
   height: 9%;
   transition: 0.4s;
 }
 
-@media screen and (max-width:800px){
-  .pie_pagina .grupo_1{
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap:30px;
-    padding: 35px 0px;
-  }
-}
-
-/*:::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
-/*:::::::::::::::::GALERIA INDEX::::::::::::::::::::::::*/
-
-.galeria{
-  display: flex;
-  overflow: auto;
-
-}
-
-.galeria img{
-  width: 30%;
-  margin: 5px;
-  border-radius: 20px;
-}
-
-.galeria img:hover{
-  margin: 5px;
-  border-radius: 10px;
-}
-
-/*:::::::::::::::::GALERIA personajes::::::::::::::::::::::::*/
-
-.galeria_personajes{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
-
-.card{
-  position: relative;
-  width: 300px;
-  height: 350px;
-  margin: 20px;
-}
-
-.card .face{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: .5s;
-}
-
-.card .front{
-  transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0 5px 10px #000;
-}
-
-.card .front img{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card .front h3{
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 45px;
-  line-height: 45px;
-  color: #ffffffab;
-  background: rgb(0,0,0, .4);
-  text-align: center;
-}
-
-.card .back{
-  transform: perspective(600px) rotateY(180deg);
-  background: #b60b17;
-  padding: 15px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  box-shadow: 0 5px 10px black;
-}
-
-.card .back h3{
-  font-size: 30px;
-  margin-top: 20px;
-  letter-spacing: 2px;
-}
-
-.card .back p{
-  letter-spacing: 1px;
-}
-
-.card:hover .front{
-  transform: perspective(600px) rotateY(180deg);
-}
-
-.card:hover .back{
-  transform: perspective(600px) rotateY(360deg);
-}
-/*
-.galeria_personajes img{
-  width: 20%;
-  margin: 10px;
-  border-radius: 20px;
-}*/
-
-
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
-/*:::::::::::::imagenes historia::::::::::::::::*/
-
-.img_historia{
-  display: flex;
-  align-items: center;
-  position: relative;
-  width: 30%;                            /*500px*/
-  height: 30%;                            /*150px*/
-  border: 1px solid #5a5a5a;
-}
-.img_historia:hover{
-  display: flex;
-  align-items: center;
-  position: relative;
-  width: 30%;
-  height: 30%;
-  border: 1px solid #b60b17;
-}
-
-.ano{
-  align-items: center;
-  padding-right: 50px;                         /*50px:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/ 
-  font-size: 5vw;                            /*3rem*/
-  font-family: 'Pathway Gothic One', sans-serif;
-}
-.ano::after::before{
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 2px;
-  background-color: #5a5a5a;;
-  
-  
-}
-
-.cont_img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10%;            /*100px*/
-}
-
-.intro_hist{
-  width: 60%;
-  font-size: 200;
-}
-
-/*::::::::::FORMULARIO::::::::::::*/
-
-form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: #fff;
-}
-
-
-
-/*::::::::::::::::::::::::*/
-
-/*:::::::Galeria peliculas:::::::::*/
-
-.galeria_peliculas{
-  display: flex;
-  align-items: center;
-  position: relative;
-  width: 500px;
-  height: 150px;
-  border: 1px solid #5a5a5a;
-}
-
-.img_pelicula{
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 500px;
-    height: 700x;
-    border: 1px solid #5a5a5a;
-}
-
-.nombre_pelicula{
-  display: flex;
-  justify-content: center;
-  padding-right: 50px;
-  font-size: 3rem;
-  font-family: 'Pathway Gothic One', sans-serif;
-}
-
-.titu_pelicula{
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-.titu_personajes{
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-/*:::::::::::carrusel::::::::::::*/
-.contenedor-carousel{
-  display: flex;
-  justify-content: center;
-}
-
-
-.carousel{
-  width: 60%;
-}
-
 /*::::::::::::::formulario::::::::::::::::*/
-
-.formulario{
+.formulario {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -481,3 +132,332 @@ form{
   background-color: #b60b17;
   border-radius: 10px;
 }
+
+/*::::::::::FORMULARIO::::::::::::*/
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #fff;
+}
+
+/*::::::::::::::::::::::::*/
+h1 {
+  color: rgba(255, 255, 255, 0.6705882353);
+}
+
+h2 {
+  color: rgba(255, 255, 255, 0.6705882353);
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6705882353);
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6705882353);
+    margin-top: 5%;
+    transition: 0.4s;
+  }
+}
+.underline {
+  display: inline-block;
+  position: relative;
+}
+
+/*:::::::::efecto subrayado:::::::::::*/
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #851d1d;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*:::::::::::::::::::::::::::::::::*/
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px; /*30px*/
+  margin-right: 10px;
+}
+
+.img_titulo {
+  margin-top: 5rem;
+  width: 60%; /*700px*/
+  height: 10%; /*150px*/
+  padding-left: 10%; /*200px*/
+}
+
+.intro {
+  width: 65%; /*500px*/
+  font-family: "Pathway Gothic One", sans-serif;
+  padding-left: 10%; /*200px*/
+}
+
+.titu_gale {
+  margin-left: 10%;
+  width: 35%;
+}
+
+@media screen and (max-width: 800px) {
+  .titu_gale {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 60%;
+  }
+}
+ul {
+  margin-bottom: 0%; /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+}
+
+nav a {
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 560px) {
+  nav a {
+    font-weight: 400;
+    margin-right: 10px;
+  }
+}
+nav a:hover {
+  color: #b60b17;
+  transition: all 300ms ease;
+}
+
+main {
+  background-color: #000;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.6705882353);
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 800;
+}
+
+/*:::::::::::::Pie de pagina::::::::::*/
+@media screen and (max-width: 800px) {
+  .pie_pagina .grupo_1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*:::::::::::::::::GALERIA INDEX::::::::::::::::::::::::*/
+.galeria {
+  display: flex;
+  overflow: auto;
+}
+
+.galeria img {
+  width: 30%;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.galeria img:hover {
+  margin: 5px;
+  border-radius: 10px;
+}
+
+/*:::::::::::::::::GALERIA personajes::::::::::::::::::::::::*/
+.galeria_personajes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .front h3 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 45px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.6705882353);
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #b60b17;
+  padding: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*:::::::::::::imagenes historia::::::::::::::::*/
+.img_historia {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 30%; /*500px*/
+  height: 30%; /*150px*/
+  border: 1px solid #5a5a5a;
+}
+
+.img_historia:hover {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 30%;
+  height: 30%;
+  border: 1px solid #b60b17;
+}
+
+.ano {
+  align-items: center;
+  padding-right: 50px; /*50px:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+  font-size: 5vw; /*3rem*/
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+.ano::after::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #5a5a5a;
+}
+
+.cont_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%; /*100px*/
+}
+
+.intro_hist {
+  width: 60%;
+  font-size: 200;
+}
+
+/*:::::::Galeria peliculas:::::::::*/
+.galeria_peliculas {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 150px;
+  border: 1px solid #5a5a5a;
+}
+
+.img_pelicula {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 700x;
+  border: 1px solid #5a5a5a;
+}
+
+.nombre_pelicula {
+  display: flex;
+  justify-content: center;
+  padding-right: 50px;
+  font-size: 3rem;
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+.titu_pelicula {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.titu_personajes {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+/*:::::::::::carrusel::::::::::::*/
+.contenedor-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  width: 60%;
+}
+
+/*# sourceMappingURL=style.css.map */

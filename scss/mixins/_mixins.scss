@@ -1,0 +1,7 @@
+@mixin ancho($valor){
+  width: $valor;
+}
+
+@mixin alto($valor){
+  height: $valor;
+}

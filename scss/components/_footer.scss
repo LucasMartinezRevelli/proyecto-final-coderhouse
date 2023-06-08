@@ -1,0 +1,94 @@
+.pie_pagina{
+  @include ancho(100%);
+  background-color: rgb(22, 21, 21);
+}
+.pie_pagina .grupo_1{
+  @include ancho(100%);
+  max-width: 1200px;
+  margin: auto;                                                             
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);                                      /*:::::::::::::::::::::::::::USANDO GRID:::::::::::::::::::::::*/
+  grid-gap:50px;
+  padding: 30px 0px;
+}
+
+.img_footer{
+  @include ancho(10%);
+  @include alto(5%);
+}
+.pie_pagina .grupo_1 .box figure{
+  @include ancho(100%);
+  @include alto(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie_pagina .grupo_1 .box figure img{
+  width: 250px;
+}
+.pie-pagina .grupo_1 .box h2{
+  color: map-get($colores, blanco);
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie_pagina .grupo_1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie_pagina .grupo_1 .red_social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: map-get($colores, blanco);
+  margin-right: 10px;
+  background-color: rgb(19, 0, 0);
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie_pagina .grupo_1 .red_social a:hover{
+  color: rgb(158, 84, 84);
+}
+.pie_pagina .grupo_2{
+  background-color: rgb(19, 0, 0);
+  padding: 15px 10px;
+  text-align: center;
+  color: map-get($colores, blanco);
+}
+.pie_pagina .grupo_2 small{
+  font-size: 15px;
+}
+
+.historia_titulo{
+  color: map-get($colores, blanco);
+  margin-left: 23%;
+  margin-bottom: 10%;
+  padding-top: 5%;
+  font-size: 3vw;
+}
+
+
+.img_ig{
+  @include ancho(15%);
+  @include alto(15%);
+  transition: 0.4s;
+}
+
+.img_lin{
+  @include ancho(7%);
+  @include alto(7%);
+  transition: 0.4s;
+}
+
+.img_ig:hover{
+  @include ancho(17%);
+  @include alto(17%);
+  transition: 0.4s;
+}
+
+.img_lin:hover{
+  @include ancho(9%);
+  @include alto(9%);
+  transition: 0.4s;
+}
