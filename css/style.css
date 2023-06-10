@@ -168,6 +168,16 @@ a {
     transition: 0.4s;
   }
 }
+@media screen and (max-width: 465px) {
+  ul {
+    display: flex;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6705882353);
+    margin-top: 5%;
+    transition: 0.4s;
+    flex-direction: column;
+  }
+}
 .underline {
   display: inline-block;
   position: relative;
@@ -295,7 +305,7 @@ p {
 
 .card {
   position: relative;
-  width: 300px;
+  width: 16%;
   height: 350px;
   margin: 20px;
 }
@@ -424,8 +434,8 @@ p {
   display: flex;
   align-items: center;
   position: relative;
-  width: 500px;
-  height: 700x;
+  width: 26%;
+  height: 36%;
   border: 1px solid #5a5a5a;
 }
 
@@ -433,7 +443,7 @@ p {
   display: flex;
   justify-content: center;
   padding-right: 50px;
-  font-size: 3rem;
+  font-size: 3vw;
   font-family: "Pathway Gothic One", sans-serif;
 }
 
@@ -442,6 +452,7 @@ p {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  font-size: 4vw;
 }
 
 .titu_personajes {
