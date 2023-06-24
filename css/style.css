@@ -220,9 +220,27 @@ a {
   padding-left: 10%; /*200px*/
 }
 
+@media screen and (max-width: 465px) {
+  .img_titulo {
+    display: block;
+    width: 60%;
+    margin: auto;
+    padding-top: 10%;
+  }
+  .intro {
+    width: 65%; /*500px*/
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 25px;
+    padding-left: 10%; /*200px*/
+    display: block;
+    margin: auto;
+    padding-top: 2%;
+  }
+}
 .intro {
   width: 65%; /*500px*/
   font-family: "Pathway Gothic One", sans-serif;
+  font-size: 25px;
   padding-left: 10%; /*200px*/
 }
 
@@ -233,7 +251,7 @@ a {
 
 @media screen and (max-width: 800px) {
   .titu_gale {
-    margin-left: 10%;
+    margin-left: 28%;
     margin-top: 5%;
     width: 60%;
   }
@@ -266,6 +284,14 @@ p {
   color: rgba(255, 255, 255, 0.6705882353);
   font-family: "Pathway Gothic One", sans-serif;
   font-weight: 800;
+  font-size: x-large;
+}
+
+h5 {
+  color: rgba(255, 255, 255, 0.6705882353);
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 800;
+  font-size: x-large;
 }
 
 /*:::::::::::::Pie de pagina::::::::::*/
@@ -306,8 +332,30 @@ p {
 .card {
   position: relative;
   width: 16%;
-  height: 350px;
+  height: 21.87rem;
   margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    position: relative;
+    width: 65%;
+    height: 25rem;
+    margin: 20px;
+  }
+  .titu_personajes {
+    color: #fff;
+    display: block;
+    margin: auto;
+    padding-top: 2%;
+    padding-left: 25%;
+  }
+}
+.titu_personajes {
+  color: rgba(255, 255, 255, 0.6705882353);
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .card .face {
@@ -363,6 +411,7 @@ p {
 
 .card .back p {
   letter-spacing: 1px;
+  font-size: 15px;
 }
 
 .card:hover .front {
@@ -379,18 +428,20 @@ p {
   display: flex;
   align-items: center;
   position: relative;
-  width: 30%; /*500px*/
+  width: 45%; /*500px*/
   height: 30%; /*150px*/
   border: 1px solid #5a5a5a;
+  transition: 0.5s;
 }
 
 .img_historia:hover {
   display: flex;
   align-items: center;
   position: relative;
-  width: 30%;
+  width: 50%;
   height: 30%;
-  border: 1px solid #b60b17;
+  border: 1.5px solid #b60b17;
+  transition: 0.5s;
 }
 
 .ano {
@@ -408,13 +459,6 @@ p {
   background-color: #5a5a5a;
 }
 
-.cont_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10%; /*100px*/
-}
-
 .intro_hist {
   width: 60%;
   font-size: 200;
@@ -430,33 +474,52 @@ p {
   border: 1px solid #5a5a5a;
 }
 
+.pelis {
+  padding-bottom: 10%;
+}
+
+.cont_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%; /*100px*/
+}
+
 .img_pelicula {
   display: flex;
+  justify-content: center;
   align-items: center;
-  position: relative;
-  width: 26%;
-  height: 36%;
+  width: 30%;
+  height: 45%;
+  margin-left: 35%;
+  margin-top: 5%;
+  margin-bottom: 6%;
   border: 1px solid #5a5a5a;
+  transition: 1s;
+}
+
+.img_pelicula:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 45%;
+  margin-left: 35%;
+  margin-top: 5%;
+  margin-bottom: 6%;
+  border: 1px solid #b60b17;
+  transition: 1s;
 }
 
 .nombre_pelicula {
-  display: flex;
-  justify-content: center;
-  padding-right: 50px;
-  font-size: 3vw;
+  text-align: center;
+  font-size: 4vw;
   font-family: "Pathway Gothic One", sans-serif;
+  padding-top: 8%;
 }
 
 .titu_pelicula {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-  font-size: 4vw;
-}
-
-.titu_personajes {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6705882353);
   display: flex;
   justify-content: center;
   padding-top: 50px;
@@ -469,7 +532,7 @@ p {
 }
 
 .carousel {
-  width: 60%;
+  width: 48%;
 }
 
 .imagen {
