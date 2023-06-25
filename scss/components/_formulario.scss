@@ -1,25 +1,66 @@
-/*::::::::::::::formulario::::::::::::::::*/
-
-.formulario{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 100px;
-  margin-right: 400px;
-  margin-left: 400px;
-  background-color: map-get($colores, card);
-  border-radius: 10px;
-}
 
 /*::::::::::FORMULARIO::::::::::::*/
 
-form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: map-get($colores, blanco);
+form {
+  max-width: 60%;
+  margin: auto;
+  background-color: map-get($colores, rojo_oscuro);
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px map-get($colores, nav);
 }
 
+.cont{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 
+.titu_cont{
+  color: map-get($colores, gris_claro);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 140%;                            /*3rem*/
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: map-get($colores, gris_claro);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5%;
+  border-radius: 5px;
+  border: 1px solid map-get($colores, nav);
+  box-sizing: border-box;
+  resize: vertical;
+  background-color: map-get($colores, gris_claro);
+}
+
+input[type="submit"] {
+  width: 98%;
+  background-color: map-get($colores, nav);
+  color: map-get($colores, gris_claro);
+  padding: 0.5%;
+  margin-top: 10%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 140%;
+  transition: 0.5s;
+  font-family: 'Pathway Gothic One', sans-serif;
+
+}
+
+input[type="submit"]:hover {
+  background-color: map-get($colores, card);
+  transition: 0.5s;
+}
 
 /*::::::::::::::::::::::::*/

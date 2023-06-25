@@ -27,12 +27,12 @@
   width: 250px;
 }
 .pie-pagina .grupo_1 .box h2{
-  color: map-get($colores, blanco);
+  color: map-get($colores, gris_claro);
   margin-bottom: 25px;
   font-size: 20px;
 }
 .pie_pagina .grupo_1 .box p{
-  color: #efefef;
+  color: map-get($colores, gris_claro);
   margin-bottom: 10px;
 }
 .pie_pagina .grupo_1 .red_social a{
@@ -41,7 +41,7 @@
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: map-get($colores, blanco);
+  color: map-get($colores, gris_claro);
   margin-right: 10px;
   background-color: rgb(19, 0, 0);
   text-align: center;
@@ -54,15 +54,15 @@
   background-color: rgb(19, 0, 0);
   padding: 15px 10px;
   text-align: center;
-  color: map-get($colores, blanco);
+  color: map-get($colores, gris_claro);
 }
 .pie_pagina .grupo_2 small{
   font-size: 15px;
 }
 
 .historia_titulo{
-  color: map-get($colores, blanco);
-  margin-left: 23%;
+  color: map-get($colores, gris_claro);
+  margin-left: 30%;
   margin-bottom: 10%;
   padding-top: 5%;
   font-size: 3vw;

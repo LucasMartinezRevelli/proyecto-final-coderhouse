@@ -51,13 +51,13 @@ header {
 }
 
 .pie-pagina .grupo_1 .box h2 {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6705882353);
   margin-bottom: 25px;
   font-size: 20px;
 }
 
 .pie_pagina .grupo_1 .box p {
-  color: #efefef;
+  color: rgba(255, 255, 255, 0.6705882353);
   margin-bottom: 10px;
 }
 
@@ -67,7 +67,7 @@ header {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6705882353);
   margin-right: 10px;
   background-color: rgb(19, 0, 0);
   text-align: center;
@@ -82,7 +82,7 @@ header {
   background-color: rgb(19, 0, 0);
   padding: 15px 10px;
   text-align: center;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6705882353);
 }
 
 .pie_pagina .grupo_2 small {
@@ -90,8 +90,8 @@ header {
 }
 
 .historia_titulo {
-  color: #fff;
-  margin-left: 23%;
+  color: rgba(255, 255, 255, 0.6705882353);
+  margin-left: 30%;
   margin-bottom: 10%;
   padding-top: 5%;
   font-size: 3vw;
@@ -121,29 +121,72 @@ header {
   transition: 0.4s;
 }
 
-/*::::::::::::::formulario::::::::::::::::*/
-.formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 100px;
-  margin-right: 400px;
-  margin-left: 400px;
-  background-color: #b60b17;
-  border-radius: 10px;
-}
-
 /*::::::::::FORMULARIO::::::::::::*/
 form {
+  max-width: 60%;
+  margin: auto;
+  background-color: rgb(31, 0, 0);
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #851d1d;
+}
+
+.cont {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.titu_cont {
+  color: rgba(255, 255, 255, 0.6705882353);
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: #fff;
+  padding-bottom: 2%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 140%; /*3rem*/
+  font-family: "Pathway Gothic One", sans-serif;
+  color: rgba(255, 255, 255, 0.6705882353);
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 0.5%;
+  border-radius: 5px;
+  border: 1px solid #851d1d;
+  box-sizing: border-box;
+  resize: vertical;
+  background-color: rgba(255, 255, 255, 0.6705882353);
+}
+
+input[type=submit] {
+  width: 98%;
+  background-color: #851d1d;
+  color: rgba(255, 255, 255, 0.6705882353);
+  padding: 0.5%;
+  margin-top: 10%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 140%;
+  transition: 0.5s;
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color: #b60b17;
+  transition: 0.5s;
 }
 
 /*::::::::::::::::::::::::*/
 h1 {
   color: rgba(255, 255, 255, 0.6705882353);
+  font-family: "Pathway Gothic One", sans-serif;
 }
 
 h2 {
@@ -344,11 +387,11 @@ h5 {
     margin: 20px;
   }
   .titu_personajes {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.6705882353);
     display: block;
     margin: auto;
     padding-top: 2%;
-    padding-left: 25%;
+    padding-left: 4%;
   }
 }
 .titu_personajes {
